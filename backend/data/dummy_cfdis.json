@@ -1,0 +1,151 @@
+{
+  "cfdis_descargados": [
+    {
+      "id": "CFDI001",
+      "serie": "A",
+      "folio": "01",
+      "fecha": "2017-11-02T10:47:43",
+      "emisor_rfc": "AAA010101AAA",
+      "emisor_nombre": "Empresa de Prueba S.A. de C.V.",
+      "receptor_rfc": "XAXX010101000",
+      "receptor_nombre": "Cliente de Ejemplo",
+      "total": "$1,250.00",
+      "moneda": "MXN",
+      "forma_pago": "03",
+      "estado": "Descargado",
+      "tipo_comprobante": "I",
+      "lugar_expedicion": "06300"
+    },
+    {
+      "id": "CFDI002", 
+      "serie": "FE",
+      "folio": "2",
+      "fecha": "2023-03-02T07:40:00",
+      "emisor_rfc": "BBB020202BBB",
+      "emisor_nombre": "Servicios Contables Modernos S.C.",
+      "receptor_rfc": "YBYY020202000",
+      "receptor_nombre": "Corporativo Nacional",
+      "total": "$2,300.50",
+      "moneda": "MXN", 
+      "forma_pago": "99",
+      "estado": "Descargado",
+      "tipo_comprobante": "I",
+      "lugar_expedicion": "01000"
+    },
+    {
+      "id": "CFDI003",
+      "serie": "RA", 
+      "folio": "01",
+      "fecha": "2017-05-10T10:47:43",
+      "emisor_rfc": "CCC030303CCC",
+      "emisor_nombre": "Retenciones y Servicios S.A.",
+      "receptor_rfc": "ZCZZ030303000", 
+      "receptor_nombre": "Beneficiario de Retenciones",
+      "total": "$875.25",
+      "moneda": "MXN",
+      "forma_pago": "99",
+      "estado": "Descargado",
+      "tipo_comprobante": "P",
+      "lugar_expedicion": "06300"
+    }
+  ],
+  "cfdis_validacion": [
+    {
+      "id": "CFDI001",
+      "serie": "A",
+      "folio": "01", 
+      "fecha": "2017-11-02T10:47:43",
+      "emisor_rfc": "AAA010101AAA",
+      "emisor_nombre": "Empresa de Prueba S.A. de C.V.",
+      "total": "$1,250.00",
+      "estado": "Válido",
+      "estatus_sat": "Vigente",
+      "fecha_validacion": "2024-08-09T15:30:00",
+      "sello_valido": true,
+      "certificado_valido": true
+    },
+    {
+      "id": "CFDI002",
+      "serie": "FE", 
+      "folio": "2",
+      "fecha": "2023-03-02T07:40:00",
+      "emisor_rfc": "BBB020202BBB",
+      "emisor_nombre": "Servicios Contables Modernos S.C.",
+      "total": "$2,300.50",
+      "estado": "Válido",
+      "estatus_sat": "Vigente", 
+      "fecha_validacion": "2024-08-09T15:31:15",
+      "sello_valido": true,
+      "certificado_valido": true
+    },
+    {
+      "id": "CFDI003",
+      "serie": "RA",
+      "folio": "01",
+      "fecha": "2017-05-10T10:47:43", 
+      "emisor_rfc": "CCC030303CCC",
+      "emisor_nombre": "Retenciones y Servicios S.A.",
+      "total": "$875.25",
+      "estado": "Cancelado",
+      "estatus_sat": "Cancelado",
+      "fecha_validacion": "2024-08-09T15:32:45",
+      "sello_valido": false,
+      "certificado_valido": true,
+      "motivo_cancelacion": "Comprobante emitido con errores con relación"
+    }
+  ],
+  "cfdis_generados": [
+    {
+      "id": "CFDI004",
+      "serie": "MVP",
+      "folio": "001", 
+      "fecha": "2024-08-09T16:00:00",
+      "emisor_rfc": "MVP240809XXX",
+      "emisor_nombre": "Tu Empresa Demo S.A. de C.V.",
+      "receptor_rfc": "CLI240809000",
+      "receptor_nombre": "Cliente Demo Uno",
+      "total": "$1,500.00",
+      "moneda": "MXN",
+      "forma_pago": "03",
+      "estado": "Generado", 
+      "tipo_comprobante": "I",
+      "lugar_expedicion": "14000",
+      "uuid": "12345678-1234-5678-9ABC-123456789DEF"
+    },
+    {
+      "id": "CFDI005",
+      "serie": "MVP",
+      "folio": "002",
+      "fecha": "2024-08-09T16:15:00", 
+      "emisor_rfc": "MVP240809XXX",
+      "emisor_nombre": "Tu Empresa Demo S.A. de C.V.",
+      "receptor_rfc": "CLI240809001", 
+      "receptor_nombre": "Cliente Demo Dos",
+      "total": "$3,250.75",
+      "moneda": "MXN",
+      "forma_pago": "01",
+      "estado": "Generado",
+      "tipo_comprobante": "I", 
+      "lugar_expedicion": "14000",
+      "uuid": "87654321-4321-8765-CBA9-987654321FED"
+    }
+  ],
+  "catalogos_sat": {
+    "formas_pago": {
+      "01": "Efectivo",
+      "03": "Transferencia electrónica de fondos",
+      "99": "Por definir"
+    },
+    "tipos_comprobante": {
+      "I": "Ingreso", 
+      "E": "Egreso",
+      "T": "Traslado",
+      "P": "Pago"
+    },
+    "monedas": {
+      "MXN": "Peso Mexicano",
+      "USD": "Dólar americano",
+      "EUR": "Euro"
+    }
+  }
+}
